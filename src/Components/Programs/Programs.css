@@ -1,0 +1,45 @@
+.programs{
+    margin: 90px auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.program img{
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+.program{
+    flex-basis: 30%;
+    position: relative;
+}
+.caption{
+    border-radius: 10px;
+    position: absolute;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(72, 78, 132, 0.3);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    color: #fff;
+    padding-top: 70%;
+    transition: 0.4s;
+    opacity: 0;
+    padding: 0;
+}
+.caption img{
+    width: 50px;
+    margin-bottom: 100px;
+}
+
+.program:hover .caption{
+    background: rgba(89, 100, 183, 0.7);
+    opacity: 1;
+}
